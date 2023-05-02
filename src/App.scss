@@ -1,0 +1,18 @@
+.App {
+    background-color: black;
+
+    .header {
+
+        position: sticky;
+        top: 0;
+        z-index: 1071;
+        background-color: black;
+       
+
+
+    }
+
+    .Toastify__progress-bar-theme--dark {
+        background-color: green;
+    }
+}

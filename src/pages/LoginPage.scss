@@ -1,0 +1,20 @@
+.login-page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 75px;
+    color: white;
+
+    h1{
+        color: white;
+        font-size: x-large;
+        font-weight: 500;
+    }
+
+    button{
+        background-color: transparent;
+        border:none;
+        color: white;
+        cursor:pointer
+    }
+}

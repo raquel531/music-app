@@ -1,0 +1,50 @@
+.App {
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        padding: 10px;
+        height: 45px;
+        align-items: center;
+        width: 97%;
+    
+
+        .title {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .account,
+            .cartIcon,
+            .favorites,
+            .catalog,
+            .logOut {
+                margin: 0 10px;
+                text-decoration: none;
+                color: white;
+                cursor: pointer;
+            }
+
+
+                span{
+                    color: white;
+                    position: absolute;
+                    width: 17px;
+                    height: 17px;
+                    font-size: 12px;
+                    border-radius: 50%;
+                    text-align: center;
+                    margin-top: -15px;
+                    margin-left: 95px;
+                    background-color: red;
+                }
+            }
+        }
+    }
+

@@ -1,0 +1,124 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+    width: 150px;
+
+
+    .box {
+        position: relative;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        transition: transform 250ms;
+
+        .img {
+            height: 150px;
+            border-radius: 10px;
+
+            img {
+                height: 150px;
+                border-radius: 10px;
+            }
+        }
+
+        .info {
+            align-items: center;
+            border-radius: 10px;
+            color: transparent;
+            display: flex;
+            flex-direction: column;
+            height: 150px;
+            justify-content: center;
+            position: absolute;
+            transition: 0.3s ease-in-out;
+            width: 150px;
+            cursor: default;
+
+            p {
+                margin: 0;
+                margin-bottom: 10px;
+                text-align: center;
+                font-weight: 600;
+                
+            }
+
+            .artist {
+                font-weight: 700;
+                font-size: smaller;
+            }
+
+            .collection {
+                font-style: italic;
+                font-size: 12px;
+            }
+
+            .price {
+                font-size: 12px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+
+            .icon {
+                align-items: center;
+                background-color: transparent;
+                border-radius: 50%;
+                border: none;
+                display: flex;
+                height: 33px;
+                justify-content: center;
+                width: 33px;
+
+                #redCart {
+                    color: rgb(255 255 255);
+                    background-color: rgb(231 76 60 / 80%);
+                    height: 17px;
+                    width: 17px;
+                    border-radius: 50%;
+                    padding: 9px;
+                }
+            }
+
+        }
+
+
+    }
+
+    .box:hover {
+
+        transform: scale(1.1);
+
+
+        .info {
+            color: rgb(255, 255, 255);
+            opacity: 80%;
+            background-color: black;
+
+            .icon {
+                cursor: pointer;
+                
+                border: 1px solid white;
+                border-radius: 50%;
+                height: 33px;
+                width: 33px;
+            }
+
+
+        }
+
+    }
+
+    .name {
+        color: white;
+        font-size: 15px;
+        text-align: center;
+        cursor: default;
+
+        h4 {
+            font-weight: 400;
+            font-size: 14px;
+
+        }
+    }
+
+}

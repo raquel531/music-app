@@ -1,0 +1,131 @@
+.cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+    color: white;
+    position: fixed;
+    background-color: rgba(27, 25, 25, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    right: 0;
+    top: -420px;
+    padding: 27px;
+    padding-top: 0;
+    border-bottom-left-radius: 12px;
+    transition: all 1s ease-in-out;
+    transform: translateY(0);
+    overflow-y: scroll;
+    max-height: 76vh;
+    min-height: 100px;
+    max-width: 400px;
+    min-width: 300px;
+    border: solid black;
+
+    .content {
+        position: relative;
+        margin-top: 20pxpx;
+
+        table {
+
+            .no-results {
+                padding: 81px;
+            }
+
+            tr:nth-child(even) {
+                background-color: rgba(27, 25, 25, 0.8);
+            }
+
+            tr {
+
+                th,
+                td {
+                    text-align: left;
+                    padding: 8px;
+                    background-color: transparent;
+                    border-radius: 5px;
+                }
+
+                .cartHeader {
+                    font-weight: 500;
+                    font-size: 13px;
+                }
+
+                img {
+                    border-radius: 4px;
+                }
+
+                .item {
+                    font-weight: 200;
+                    font-size: 13px;
+                    padding: 10px;
+                }
+
+            }
+
+        }
+
+    }
+
+    .emptyTotal {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+
+        .clearCartButton {
+
+            button {
+                background-color: rgb(149, 143, 143, 40%);
+                color: white;
+                border-radius: 7px;
+                height: 30px;
+                width: 115px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .totalBox {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 15px;
+
+        .total {
+            font-weight: 500;
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 20px;
+        }
+
+        .price {
+            font-size: small;
+            padding-top: 3px;
+
+        }
+
+
+    }
+
+    .currency {
+        font-size: 10px;
+    }
+
+    .Toastify__toast-container {
+        top: 2em;
+    }
+}
+
+.cart::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.open {
+
+    transform: translateY(0);
+    transition: all 1s ease-in-out;
+    top: 60px;
+
+
+}

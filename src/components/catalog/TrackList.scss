@@ -1,0 +1,95 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    .search {
+        align-items: center;
+        border-radius: 5px;
+        color: white;
+        display: flex;
+        bottom: -4px;
+        left: -35px;
+        flex-direction: row;
+        height: 52px;
+        justify-content: center;
+        margin-left: 57px;
+        position: fixed;
+        width: 204px;
+        z-index: 1;
+
+        .glassIcon {
+            margin-right: 10px;
+            font-size: 10px;
+        }
+
+        input {
+            background-color: transparent;
+            border-radius: 6px;
+            border: 0.5px solid #b8b8b878;
+            color: white;
+            height: 20px;
+            text-align: center;
+        }
+    }
+
+    .tracks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+        max-width: 1090px;
+
+    }
+
+
+    .pagination {
+        align-items: center;
+        background-color: black;
+        bottom: 0;
+        left: 0;
+        color: white;
+        display: flex;
+        height: 43px;
+        justify-content: center;
+        opacity: 89%;
+        position: fixed;
+        width: 100%;
+
+        button {
+            background-color: transparent;
+            border-color: white;
+            border-radius: 3px;
+            border: 0;
+            color: white;
+            font-size: 12px;
+            font-style: italic;
+            height: 16px;
+            margin: 15px;
+        }
+
+        button:hover {
+            color: rgb(51, 50, 52);
+            cursor: pointer;
+        }
+
+        span {
+            font-size: 10px;
+        }
+
+        .active {
+
+            background-color: palevioletred;
+
+        }
+    }
+
+    .Toastify__progress-bar-theme--dark {
+        background-color: green;
+    }
+
+    .highlight {
+        color: black;
+        background-color: aliceblue;
+    }
+
+}
